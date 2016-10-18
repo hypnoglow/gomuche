@@ -7,6 +7,7 @@ gomuche stands for Google Mail unread count checker.
 This tool in fact does this:
 
     curl -su $GMAIL_USER:$GMAIL_PASS https://mail.google.com/mail/feed/atom
+    # and parsing it further
     
 But instead of user+pass authentication, this tool uses OAUTH2 which is way more secure.
 Unencrypted Google password may be leaked. In opposite, storing just an auth token is no big deal.
@@ -63,4 +64,4 @@ If you found any bug, feel free to create a GitHub issue or/and submit a pull re
 
 ## License
 
-[MIT](https://github.com/hypnoglow/gomuche/blob/master/LICENCE.md)
+[MIT](https://github.com/hypnoglow/gomuche/blob/master/LICENSE.md)
