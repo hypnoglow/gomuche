@@ -16,6 +16,14 @@ type Config struct {
 	ClientSecret string `json:"client_secret"`
 }
 
+// NewConfig returns a new Config.
+func NewConfig(clientID, clientSecret string) *Config {
+	return &Config{
+		ClientID:     clientID,
+		ClientSecret: clientSecret,
+	}
+}
+
 // NewConfigFromFile read config from file and returns it.
 func NewConfigFromFile() *Config {
 	filename := os.ExpandEnv(configFilename)
