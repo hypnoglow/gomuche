@@ -13,7 +13,7 @@ But instead of user+pass authentication, this tool uses OAUTH2 which is way more
 Unencrypted Google password may be leaked. In opposite, storing just an auth token is no big deal.
 
 This tool was written mostly for demonstrational purposes,
-but actually I use this for my [i3blocks](https://github.com/vivien/i3blocks/) mail checker.
+but actually I use it for my [i3blocks](https://github.com/vivien/i3blocks/) mail checker.
 
 ## Installation
 

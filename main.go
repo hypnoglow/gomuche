@@ -3,12 +3,11 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"io"
 	"log"
+	"os"
 	"strings"
 	"time"
-
-	"io"
-	"os"
 
 	"github.com/docopt/docopt-go"
 	"golang.org/x/oauth2"

@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"path"
-	"fmt"
 )
 
 const (
@@ -20,7 +20,7 @@ func getLogFile(isVerbose bool) *os.File {
 		os.Exit(1)
 	}
 
-	file, err := os.OpenFile(filename, os.O_CREATE | os.O_APPEND | os.O_RDWR, 0755)
+	file, err := os.OpenFile(filename, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0755)
 	if err != nil {
 		if isVerbose {
 			fmt.Printf("Error opening log file: %v\n", err)
