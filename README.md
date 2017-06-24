@@ -10,10 +10,12 @@ This tool in fact does this:
     # and parsing it further
 
 But instead of user+pass authentication, this tool uses OAUTH2 which is way more secure.
-Unencrypted Google password may be leaked. In opposite, storing just an auth token is no big deal.
+Unencrypted Google password stored in some plain text file (to use in ENV_VARIABLE like above) may be leaked.
+In opposite, storing just an auth token is no big deal.
 
 This tool was written mostly for demonstrational purposes,
-but actually I use it for my [i3blocks](https://github.com/vivien/i3blocks/) mail checker.
+but actually I use it for my [i3blocks](https://github.com/vivien/i3blocks/) mail checker 
+[here](https://github.com/hypnoglow/dotfiles/blob/master/i3/i3blocks.conf#L206).
 
 ## Installation
 
